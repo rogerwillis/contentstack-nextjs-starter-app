@@ -18,7 +18,7 @@ export default function Home(props) {
     </Layout>
   );
 }
-
+ 
 export async function getServerSideProps(context) {
   try {
     const result = await Stack.getEntryByUrl("page", context.resolvedUrl, [
